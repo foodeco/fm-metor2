@@ -194,8 +194,11 @@
     });
    
     button.addEventListener('click', () => {
-      thx.style.zIndex = 1;
+      if (num[0] != null) {
+        thx.style.zIndex = 1;
       score[0].innerHTML = num[0].innerText;
+      }
+
     });
 
   </script>
